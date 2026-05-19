@@ -282,14 +282,6 @@ $fields-footer-border: #d4d0dc;
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fields-activity-card--2 {
-  margin-top: 28px;
-}
-
-.fields-activity-card--3 {
-  margin-top: 56px;
-}
-
 .fields-activity-card-label {
   display: block;
   margin-bottom: 24px;
@@ -753,10 +745,6 @@ $fields-footer-border: #d4d0dc;
     margin: 0 auto;
   }
 
-  .fields-activity-card--2,
-  .fields-activity-card--3 {
-    margin-top: 0;
-  }
 
   .fields-process-track {
     grid-template-columns: repeat(2, 1fr);
