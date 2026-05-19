@@ -576,6 +576,123 @@ $fields-footer-border: #d4d0dc;
   color: $fields-gray-text;
 }
 
+// PETİVEDİ
+.activities-petivedi {
+  padding: 64px 0;
+  background-color: $fields-white;
+  border-top: 1px solid $fields-border-light;
+}
+
+.activities-petivedi__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  align-items: center;
+  gap: 56px;
+}
+
+.activities-petivedi__content {
+  max-width: 600px;
+}
+
+.activities-petivedi__badge {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  margin-bottom: 16px;
+  padding: 0 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: $fields-navy;
+  background-color: #eef3f8;
+  border: 1px solid #d8e2ed;
+  border-radius: 100px;
+}
+
+.activities-petivedi__eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $fields-gray-label;
+}
+
+.activities-petivedi__title {
+  margin: 0 0 20px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3px;
+  color: $fields-navy;
+}
+
+.activities-petivedi__description {
+  margin: 0 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $fields-gray-text;
+}
+
+.activities-petivedi__domain {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: $fields-navy;
+}
+
+.activities-petivedi__note {
+  margin: 0 0 24px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  color: $fields-gray-label;
+}
+
+.activities-petivedi__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: $fields-white;
+  background-color: $fields-navy;
+  border-radius: 4px;
+  cursor: default;
+  user-select: none;
+}
+
+.activities-petivedi__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding: 40px 32px;
+  background-color: #f7f9fc;
+  border: 1px solid $fields-border-light;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(15, 31, 53, 0.06);
+}
+
+.activities-petivedi__logo {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+}
+
 // CTA
 .fields-cta {
   background-color: $fields-navy;
@@ -769,9 +886,29 @@ $fields-footer-border: #d4d0dc;
   .fields-activities-inner,
   .fields-process-inner,
   .fields-partnership-inner,
+  .activities-petivedi__inner,
   .fields-cta-inner {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .activities-petivedi {
+    padding: 48px 0;
+  }
+
+  .activities-petivedi__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .activities-petivedi__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .activities-petivedi__visual {
+    min-height: 220px;
+    padding: 32px 24px;
   }
 
   .fields-hero-title {
@@ -825,9 +962,19 @@ $fields-footer-border: #d4d0dc;
   .fields-activities-inner,
   .fields-process-inner,
   .fields-partnership-inner,
+  .activities-petivedi__inner,
   .fields-cta-inner {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .activities-petivedi__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .activities-petivedi__logo {
+    max-width: 200px;
   }
 
   .fields-hero-title {

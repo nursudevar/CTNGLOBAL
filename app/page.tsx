@@ -322,6 +322,33 @@ export default function AnaSayfa() {
         </div>
       </section>
 
+      <section className="home-petivedi" aria-labelledby="home-petivedi-title">
+        <div className="home-petivedi__inner">
+          <div className="home-petivedi__content">
+            <span className="home-petivedi__badge">Çok Yakında</span>
+            <span className="home-petivedi__eyebrow">Yeni Markamız</span>
+            <h2 id="home-petivedi-title" className="home-petivedi__title">
+              PETİVEDİ Çok Yakında Sizlerle
+            </h2>
+            <p className="home-petivedi__description">
+              CTNGLOBAL çatısı altında hayata geçecek PETİVEDİ, evcil dostlarınızın ihtiyaçlarına
+              yönelik ürünleri e-ticaret deneyimiyle sunacak yeni online petshop markamızdır.
+            </p>
+            <p className="home-petivedi__domain">petivedi.com</p>
+            <p className="home-petivedi__note">Online petshop deneyimi yakında başlıyor.</p>
+            <span className="home-petivedi__button">Yakında</span>
+          </div>
+
+          <div className="home-petivedi__visual">
+            <img
+              src="/images/petivedi.png"
+              alt="PETİVEDİ"
+              className="home-petivedi__logo"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="home-cta" aria-labelledby="home-cta-title">
         <div className="home-cta-inner">
           <h2 id="home-cta-title" className="home-cta-title">

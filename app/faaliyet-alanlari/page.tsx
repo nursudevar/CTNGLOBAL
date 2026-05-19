@@ -206,6 +206,33 @@ export default function FaaliyetAlanlari() {
         </div>
       </section>
 
+      <section className="activities-petivedi" aria-labelledby="activities-petivedi-title">
+        <div className="activities-petivedi__inner">
+          <div className="activities-petivedi__content">
+            <span className="activities-petivedi__badge">Çok Yakında</span>
+            <span className="activities-petivedi__eyebrow">Yeni Markamız</span>
+            <h2 id="activities-petivedi-title" className="activities-petivedi__title">
+              PETİVEDİ Çok Yakında Sizlerle
+            </h2>
+            <p className="activities-petivedi__description">
+              CTNGLOBAL çatısı altında hayata geçecek PETİVEDİ, evcil dostlarınızın ihtiyaçlarına
+              yönelik ürünleri e-ticaret deneyimiyle sunacak yeni online petshop markamızdır.
+            </p>
+            <p className="activities-petivedi__domain">petivedi.com</p>
+            <p className="activities-petivedi__note">Online petshop deneyimi yakında başlıyor.</p>
+            <span className="activities-petivedi__button">Yakında</span>
+          </div>
+
+          <div className="activities-petivedi__visual">
+            <img
+              src="/images/petivedi.png"
+              alt="PETİVEDİ"
+              className="activities-petivedi__logo"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="fields-process" aria-labelledby="fields-process-title">
         <div className="fields-process-inner">
           <h2 id="fields-process-title" className="fields-section-title fields-section-title--center">
