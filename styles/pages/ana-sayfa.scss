@@ -588,6 +588,17 @@ $home-footer-border: #d4d0dc;
   color: #6b5b9a;
 }
 
+.home-fields-card-icon--brand {
+  padding: 8px;
+}
+
+.home-fields-card-icon-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .home-fields-card-title {
   margin: 0 0 16px;
   font-size: 22px;
@@ -648,6 +659,10 @@ $home-footer-border: #d4d0dc;
 .home-fields-card:hover .home-fields-card-icon {
   background-color: rgba(255, 255, 255, 0.1);
   color: $home-white;
+}
+
+.home-fields-card:hover .home-fields-card-icon-img {
+  filter: brightness(0) invert(1);
 }
 
 .home-fields-card:hover .home-fields-card-title {

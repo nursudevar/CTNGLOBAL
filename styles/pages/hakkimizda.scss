@@ -1,1 +1,686 @@
-// Hakkımızda sayfası stilleri
+$about-navy: #0f1f35;
+$about-navy-dark: #0a1628;
+$about-gray-text: #5c6b7a;
+$about-gray-label: #9aafc4;
+$about-white: #ffffff;
+$about-section-bg: #f5f7fa;
+$about-border-light: #e2e8ef;
+$about-footer-bg: #e4e1eb;
+$about-footer-border: #d4d0dc;
+
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $about-white;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: $about-navy;
+}
+
+// Header
+.about-header {
+  background-color: $about-white;
+  border-bottom: 1px solid #e8ecf0;
+}
+
+.about-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.about-header-logo-link {
+  display: block;
+  flex-shrink: 0;
+}
+
+.about-header-logo {
+  display: block;
+  height: 52px;
+  width: auto;
+}
+
+.about-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.about-header-nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: $about-gray-text;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.about-header-nav-link:hover {
+  color: $about-navy;
+}
+
+.about-header-nav-link--active {
+  color: $about-navy;
+  border-bottom-color: $about-navy;
+}
+
+.about-header-cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 20px;
+  background-color: $about-navy;
+  color: $about-white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.about-header-cta:hover {
+  background-color: #162a45;
+}
+
+// Hero
+.about-hero {
+  background-color: $about-navy;
+  background-image: linear-gradient(135deg, #1a2d4a 0%, $about-navy 55%, $about-navy-dark 100%);
+  padding: 56px 0 64px;
+}
+
+.about-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.about-hero-eyebrow {
+  display: block;
+  margin: 0 0 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $about-gray-label;
+}
+
+.about-hero-title {
+  margin: 0 0 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+  color: $about-white;
+}
+
+.about-hero-description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+// Shared section title
+.about-section-title {
+  margin: 0 0 24px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+  color: $about-navy;
+}
+
+.about-section-title--center {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+// Company intro
+.about-intro {
+  padding: 64px 0;
+  background-color: $about-white;
+}
+
+.about-intro-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+  gap: 56px;
+}
+
+.about-intro-content {
+  max-width: 600px;
+}
+
+.about-intro-text {
+  margin: 0 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $about-gray-text;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-intro-visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-intro-visual-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 320px;
+  padding: 32px;
+  background-color: $about-navy;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-intro-visual-label {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $about-white;
+}
+
+.about-intro-visual-line {
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 20px 0 16px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.about-intro-visual-text {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: $about-gray-label;
+}
+
+// Mission & Vision
+.about-mv {
+  padding: 64px 0;
+  background-color: $about-section-bg;
+}
+
+.about-mv-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.about-mv-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.about-mv-card {
+  padding: 32px;
+  background-color: $about-white;
+  border: 1px solid $about-border-light;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(15, 31, 53, 0.04);
+}
+
+.about-mv-card-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: $about-navy;
+}
+
+.about-mv-card-text {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $about-gray-text;
+}
+
+// Values
+.about-values {
+  padding: 64px 0;
+  background-color: $about-white;
+}
+
+.about-values-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.about-values-description {
+  margin: 0 auto 40px;
+  max-width: 640px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: $about-gray-text;
+}
+
+.about-values-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.about-values-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  background-color: $about-section-bg;
+  border: 1px solid $about-border-light;
+  border-radius: 8px;
+}
+
+.about-values-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background-color: #e8eef5;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -5px;
+    border: 2px solid $about-navy;
+    border-radius: 2px;
+  }
+}
+
+.about-values-name {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $about-navy;
+}
+
+// Business approach
+.about-approach {
+  padding: 64px 0;
+  background-color: $about-section-bg;
+}
+
+.about-approach-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.about-approach-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.about-approach-step {
+  padding: 28px 24px;
+  background-color: $about-white;
+  border: 1px solid $about-border-light;
+  border-radius: 8px;
+}
+
+.about-approach-step-number {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: $about-gray-label;
+}
+
+.about-approach-step-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $about-navy;
+}
+
+.about-approach-step-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $about-gray-text;
+}
+
+// CTA
+.about-cta {
+  background-color: $about-navy;
+  padding: 50px 0;
+}
+
+.about-cta-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  text-align: center;
+}
+
+.about-cta-title {
+  margin: 0 auto 16px;
+  max-width: 640px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+  color: $about-white;
+}
+
+.about-cta-description {
+  margin: 0 auto 28px;
+  max-width: 520px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $about-gray-label;
+}
+
+.about-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 28px;
+  background-color: $about-white;
+  color: $about-navy;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.about-cta-button:hover {
+  background-color: #e8edf2;
+}
+
+// Footer
+.about-footer {
+  background-color: $about-footer-bg;
+  color: $about-gray-text;
+}
+
+.about-footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 48px 32px;
+}
+
+.about-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.about-footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.about-footer-logo {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.about-footer-brand-description {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $about-gray-text;
+  max-width: 320px;
+}
+
+.about-footer-column-title {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: $about-navy;
+}
+
+.about-footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $about-gray-text;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-footer-link:hover {
+  color: $about-navy;
+}
+
+.about-footer-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $about-gray-text;
+}
+
+.about-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid $about-footer-border;
+}
+
+.about-footer-copyright,
+.about-footer-company {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #7a8796;
+}
+
+// Responsive
+@media (max-width: 1024px) {
+  .about-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-intro-visual {
+    justify-content: stretch;
+  }
+
+  .about-intro-visual-card {
+    min-height: 240px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-header-inner {
+    padding: 0 32px;
+    height: 80px;
+  }
+
+  .about-hero-inner,
+  .about-intro-inner,
+  .about-mv-inner,
+  .about-values-inner,
+  .about-approach-inner,
+  .about-cta-inner {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .about-hero-title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .about-mv-cards,
+  .about-approach-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .about-footer-inner {
+    padding: 40px 32px 28px;
+  }
+
+  .about-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .about-footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-header-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 24px;
+    gap: 20px;
+  }
+
+  .about-header-logo {
+    height: 44px;
+  }
+
+  .about-header-nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px 24px;
+  }
+
+  .about-header-cta {
+    margin-left: auto;
+  }
+
+  .about-hero {
+    padding: 40px 0 48px;
+  }
+
+  .about-hero-inner,
+  .about-intro-inner,
+  .about-mv-inner,
+  .about-values-inner,
+  .about-approach-inner,
+  .about-cta-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-hero-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .about-hero-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .about-section-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about-intro,
+  .about-mv,
+  .about-values,
+  .about-approach {
+    padding: 48px 0;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about-footer-inner {
+    padding: 32px 24px 24px;
+  }
+
+  .about-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

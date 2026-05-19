@@ -1,6 +1,17 @@
 import Link from "next/link";
 import "@/styles/pages/iletisim.scss";
 
+const CONTACT_ADDRESS =
+  "Macun, Batı Blv. ATB İş Merkezi No:1/5 Yenimahalle/ANKARA";
+
+const CONTACT_MAP_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(
+  CONTACT_ADDRESS
+)}&hl=tr&z=16&output=embed`;
+
+const CONTACT_MAP_OPEN_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  CONTACT_ADDRESS
+)}`;
+
 export default function Iletisim() {
   return (
     <main className="contact-page">
@@ -32,18 +43,18 @@ export default function Iletisim() {
         </div>
       </header>
 
-      <section className="contact-intro" aria-labelledby="contact-intro-title">
-        <div className="contact-intro-inner">
-          <div className="contact-intro-eyebrow">
-            <span className="contact-intro-eyebrow-line" aria-hidden="true" />
-            <span className="contact-intro-eyebrow-text">İLETİŞİM</span>
-          </div>
-          <h1 id="contact-intro-title" className="contact-intro-title">
-            Bizimle İletişime Geçin
+      <section className="contact-hero" aria-labelledby="contact-hero-title">
+        <div className="contact-hero-overlay" aria-hidden="true" />
+        <div className="contact-hero-content">
+          <h1 id="contact-hero-title" className="contact-hero-title">
+            İletişim
           </h1>
-          <p className="contact-intro-description">
-            Toptan satış, tedarik süreçleri ve iş ortaklığı talepleriniz için CTNGLOBAL ekibiyle
-            iletişime geçebilirsiniz.
+          <span className="contact-hero-line" aria-hidden="true" />
+          <p className="contact-hero-text">
+            Toptan ticaret ve tedarik süreçlerinde çözüm ortağınız olmak için buradayız.
+          </p>
+          <p className="contact-hero-text">
+            Sorularınız ve iş birliği talepleriniz için bize ulaşın.
           </p>
         </div>
       </section>
@@ -55,52 +66,90 @@ export default function Iletisim() {
               İletişim Bilgileri
             </h2>
 
-            <div className="contact-info-cards">
-              <article className="contact-info-card">
-                <span className="contact-info-card-icon" aria-hidden="true">
-                  AD
+            <div className="contact-info-list">
+              <article className="contact-info-item">
+                <span className="contact-info-item-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M11 19C11 19 17 14 17 9.5C17 6.46 14.54 4 11.5 4H10.5C7.46 4 5 6.46 5 9.5C5 14 11 19 11 19Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <circle cx="11" cy="9.5" r="2" stroke="currentColor" strokeWidth="1.5" />
+                  </svg>
                 </span>
-                <h3 className="contact-info-card-title">Adres</h3>
-                <p className="contact-info-card-text">
-                  Macun, Batı Blv. ATB İş Merkezi No:1/5 Yenimahalle/ANKARA
-                </p>
+                <div className="contact-info-item-body">
+                  <h3 className="contact-info-item-label">Merkez Ofis</h3>
+                  <p className="contact-info-item-text">
+                    Macun, Batı Blv. ATB İş Merkezi No:1/5
+                    <br />
+                    Yenimahalle / ANKARA
+                  </p>
+                </div>
               </article>
 
-              <article className="contact-info-card">
-                <span className="contact-info-card-icon" aria-hidden="true">
-                  @
+              <article className="contact-info-item">
+                <span className="contact-info-item-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <rect x="3" y="5" width="16" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M3 7L11 12L19 7" stroke="currentColor" strokeWidth="1.5" />
+                  </svg>
                 </span>
-                <h3 className="contact-info-card-title">E-posta</h3>
-                <p className="contact-info-card-text">
-                  <a href="mailto:info@ctnglobal.com.tr" className="contact-info-card-link">
-                    info@ctnglobal.com.tr
-                  </a>
-                </p>
+                <div className="contact-info-item-body">
+                  <h3 className="contact-info-item-label">E-posta</h3>
+                  <p className="contact-info-item-text">
+                    <a href="mailto:info@ctnglobal.com.tr" className="contact-info-item-link">
+                      info@ctnglobal.com.tr
+                    </a>
+                  </p>
+                </div>
               </article>
 
-              <article className="contact-info-card">
-                <span className="contact-info-card-icon" aria-hidden="true">
-                  T
+              <article className="contact-info-item">
+                <span className="contact-info-item-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M6 4H8L10 9H14L12 4H16C17.1 4 18 4.9 18 6V16C18 17.1 17.1 18 16 18H6C4.9 18 4 17.1 4 16V6C4 4.9 4.9 4 6 4Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                  </svg>
                 </span>
-                <h3 className="contact-info-card-title">Telefon</h3>
-                <p className="contact-info-card-text">
-                  <a href="tel:08508400191" className="contact-info-card-link">
-                    0850 840 01 91
-                  </a>
-                </p>
+                <div className="contact-info-item-body">
+                  <h3 className="contact-info-item-label">Telefon</h3>
+                  <p className="contact-info-item-text">
+                    <a href="tel:08508400191" className="contact-info-item-link">
+                      0850 840 01 91
+                    </a>
+                  </p>
+                  <p className="contact-info-item-note">Pzt – Cum: 09:00 – 18:00</p>
+                </div>
               </article>
             </div>
           </div>
 
           <div className="contact-location">
             <h2 className="contact-location-title">Konum</h2>
-            <div className="contact-location-map" aria-hidden="true">
-              <span className="contact-location-pin" />
+            <div className="contact-location-map">
+              <iframe
+                className="contact-location-map-frame"
+                src={CONTACT_MAP_EMBED_URL}
+                title="CTN Global merkez ofis konumu — Google Haritalar"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </div>
-            <p className="contact-location-label">CTNGLOBAL merkez ofis konumu</p>
-            <p className="contact-location-address">
-              Macun, Batı Blv. ATB İş Merkezi No:1/5 Yenimahalle/ANKARA
-            </p>
+            <p className="contact-location-label">Merkez Ofis</p>
+            <p className="contact-location-address">{CONTACT_ADDRESS}</p>
+            <a
+              href={CONTACT_MAP_OPEN_URL}
+              className="contact-location-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Haritada aç
+            </a>
           </div>
         </div>
       </section>

@@ -262,11 +262,12 @@ export default function AnaSayfa() {
 
             <article className="home-fields-card">
               <span className="home-fields-card-category">02 – ELEKTRONİK</span>
-              <span className="home-fields-card-icon home-fields-card-icon--elektronik" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <rect x="5" y="3" width="12" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M9 17H13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
+              <span className="home-fields-card-icon home-fields-card-icon--brand" aria-hidden="true">
+                <img
+                  src="/images/kiwi_logo.png"
+                  alt=""
+                  className="home-fields-card-icon-img"
+                />
               </span>
               <h3 className="home-fields-card-title">Kiwi Elektronik Bayiliği</h3>
               <p className="home-fields-card-description">
@@ -283,13 +284,14 @@ export default function AnaSayfa() {
 
             <article className="home-fields-card">
               <span className="home-fields-card-category">03 – KİŞİSEL BAKIM</span>
-              <span className="home-fields-card-icon home-fields-card-icon--bakim" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <rect x="3" y="5" width="16" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M7 9H15M7 12H12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
+              <span className="home-fields-card-icon home-fields-card-icon--brand" aria-hidden="true">
+                <img
+                  src="/images/aprilla_logo.png"
+                  alt=""
+                  className="home-fields-card-icon-img"
+                />
               </span>
-              <h3 className="home-fields-card-title">Aprilla Elektronik Bayiliği</h3>
+              <h3 className="home-fields-card-title">Aprilla</h3>
               <p className="home-fields-card-description">
                 2015 kuruluşlu yerli marka Aprilla&apos;nın kişisel bakım elektroniğinde yetkili
                 distribütörüyüz. Tıraş makinesi, epilasyon aleti, saç kurutma ve daha fazlası.
