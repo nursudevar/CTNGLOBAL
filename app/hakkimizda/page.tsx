@@ -77,32 +77,37 @@ export default function Hakkimizda() {
 
       <section className="about-intro" aria-labelledby="about-intro-title">
         <div className="about-intro-inner">
-          <div className="about-intro-content">
-            <h2 id="about-intro-title" className="about-section-title">
-              Güvenilir Tedarik ve Kurumsal Ticaret Anlayışı
-            </h2>
-            <p className="about-intro-text">
-              CTNGLOBAL, işletmelerin ürün tedarik süreçlerine değer katmak amacıyla faaliyet
-              göstermektedir. Gıda, elektronik ve kişisel bakım ürün gruplarında toptan satış,
-              dağıtım ve yetkili bayi hizmetleri sunarak müşterilerine güvenilir, düzenli ve
-              sürdürülebilir çözümler sağlar.
-            </p>
-            <p className="about-intro-text">
-              Kurumsal hizmet yaklaşımı, güçlü tedarik ağı ve müşteri odaklı çalışma prensibiyle
-              CTNGLOBAL, uzun vadeli iş birlikleri kurmayı ve ticari süreçlerde güvenilir bir çözüm
-              ortağı olmayı hedefler.
-            </p>
-          </div>
-
-          <div className="about-intro-visual" aria-hidden="true">
-            <div className="about-intro-visual-card">
-              <span className="about-intro-visual-label">CTNGLOBAL</span>
-              <span className="about-intro-visual-line" />
-              <p className="about-intro-visual-text">
-                Toptan ticaret · Yetkili bayi · Kurumsal tedarik
-              </p>
-            </div>
-          </div>
+          <h2 id="about-intro-title" className="about-section-title">
+            Güvenilir Tedarik ve Kurumsal Ticaret Anlayışı
+          </h2>
+          <p className="about-intro-text">
+            CTN Global, farklı sektörlerde faaliyet gösteren, güvenilir ticaret anlayışını
+            yenilikçi bakış açısıyla birleştiren bir anonim şirkettir. Kurulduğu günden itibaren
+            güçlü tedarik yapısı, geniş ürün ağı ve iş ortaklarına sunduğu sürdürülebilir
+            çözümlerle ticaret alanında değer üretmeyi hedeflemektedir.
+          </p>
+          <p className="about-intro-text">
+            Şirketimiz; toptan gıda ticareti, Kiwi ve Aprilla elektronik markalarının toptan
+            satışı ve yakında faaliyete geçecek olan Petivedi.com online pet shop platformu ile
+            üç ana alanda hizmet vermektedir. Her faaliyet alanında kalite, güven,
+            ulaşılabilirlik ve müşteri memnuniyeti ilkelerini ön planda tutarak hem kurumsal iş
+            ortaklarına hem de son kullanıcıya güçlü bir hizmet deneyimi sunmayı amaçlıyoruz.
+          </p>
+          <p className="about-intro-text">
+            Toptan gıda ticaretinde geniş ürün ağı ve güvenilir tedarik süreçleriyle
+            işletmelerin ihtiyaçlarına profesyonel çözümler sunarken; elektronik ürün grubunda
+            Kiwi ve Aprilla markalarının toptan ticaretiyle kaliteli, yenilikçi ve kullanışlı
+            ürünleri daha geniş kitlelerle buluşturuyoruz. Yakında hayata geçecek olan
+            Petivedi.com ile ise evcil hayvan sahiplerine kolay, güvenilir ve erişilebilir bir
+            online alışveriş deneyimi sunmayı hedefliyoruz.
+          </p>
+          <p className="about-intro-text">
+            CTN Global olarak değişen pazar ihtiyaçlarını yakından takip ediyor, farklı
+            sektörlerdeki faaliyetlerimizi güçlü bir kurumsal yapı altında bir araya getiriyoruz.
+            Teknoloji, ticaret ve dijitalleşme odağında büyüyen yapımızla; güvenilir iş
+            ortaklıkları kurmaya, sürdürülebilir değer üretmeye ve hizmet verdiğimiz her alanda
+            kalite standartlarını yükseltmeye devam ediyoruz.
+          </p>
         </div>
       </section>
 

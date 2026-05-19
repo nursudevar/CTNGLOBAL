@@ -1,13 +1,14 @@
-import { rmSync } from "fs";
-import { join } from "path";
+import { spawnSync } from "child_process";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
-const nextDir = join(process.cwd(), ".next");
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const prepareScript = join(scriptDir, "prepare-next.mjs");
 
-try {
-  rmSync(nextDir, { recursive: true, force: true });
-  console.log("[ctnglobal] .next cache cleared");
-} catch (error) {
-  if (error && error.code !== "ENOENT") {
-    throw error;
-  }
+const result = spawnSync(process.execPath, [prepareScript, ...process.argv.slice(2)], {
+  stdio: "inherit",
+});
+
+if (result.status !== 0) {
+  process.exit(result.status ?? 1);
 }

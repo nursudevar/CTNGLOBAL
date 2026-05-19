@@ -158,18 +158,16 @@ $about-footer-border: #d4d0dc;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 48px;
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  align-items: center;
-  gap: 56px;
 }
 
-.about-intro-content {
-  max-width: 600px;
+.about-intro-inner .about-section-title {
+  margin-bottom: 28px;
+  max-width: 720px;
 }
 
 .about-intro-text {
   margin: 0 0 20px;
+  max-width: 100%;
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
@@ -178,51 +176,6 @@ $about-footer-border: #d4d0dc;
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.about-intro-visual {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.about-intro-visual-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-  min-height: 320px;
-  padding: 32px;
-  background-color: $about-navy;
-  background-image:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 28px 28px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.about-intro-visual-label {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: $about-white;
-}
-
-.about-intro-visual-line {
-  display: block;
-  width: 48px;
-  height: 2px;
-  margin: 20px 0 16px;
-  background-color: rgba(255, 255, 255, 0.35);
-}
-
-.about-intro-visual-text {
-  margin: 0;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.3px;
-  color: $about-gray-label;
 }
 
 // Mission & Vision
@@ -542,19 +495,6 @@ $about-footer-border: #d4d0dc;
 
 // Responsive
 @media (max-width: 1024px) {
-  .about-intro-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-intro-visual {
-    justify-content: stretch;
-  }
-
-  .about-intro-visual-card {
-    min-height: 240px;
-  }
-
   .about-values-grid {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -12,6 +12,7 @@ type AboutTab = {
   subtitle: string;
   contentTitle: string;
   contentDescription: string;
+  imageSrc: string;
   bullets: string[];
 };
 
@@ -23,6 +24,7 @@ const aboutTabs: AboutTab[] = [
     contentTitle: "Güvenilir ve Kurumsal Hizmet Anlayışı",
     contentDescription:
       "CTNGLOBAL, işletmelerin toptan ürün ihtiyaçlarına düzenli, güvenilir ve profesyonel çözümler sunmak amacıyla faaliyet gösterir.",
+    imageSrc: "/images/kurumsal-yapi.png",
     bullets: [
       "Resmi ve güvenilir hizmet yaklaşımı",
       "Müşteri odaklı süreç yönetimi",
@@ -36,6 +38,7 @@ const aboutTabs: AboutTab[] = [
     contentTitle: "Geniş Ürün Ağı ve Güçlü Tedarik Süreci",
     contentDescription:
       "Gıda ve elektronik ürün gruplarında geniş tedarik ağıyla işletmelerin ihtiyaçlarına hızlı ve planlı çözümler sunar.",
+    imageSrc: "/images/tedarik.png",
     bullets: [
       "Gıda ve elektronik ürün grupları",
       "Planlı tedarik süreci",
@@ -49,6 +52,7 @@ const aboutTabs: AboutTab[] = [
     contentTitle: "Uzun Vadeli ve Güvenilir İş Birlikleri",
     contentDescription:
       "CTNGLOBAL, müşterileri ve iş ortaklarıyla güvene dayalı, uzun vadeli ve sürdürülebilir ilişkiler kurmayı hedefler.",
+    imageSrc: "/images/is-ortaklari.png",
     bullets: [
       "Kurumsal iş ortaklığı yaklaşımı",
       "Şeffaf iletişim",
@@ -118,7 +122,14 @@ export default function AnaSayfa() {
 
           <div className="home-hero-visual" aria-hidden="true">
             <div className="home-hero-visual-frame">
-              <div className="home-hero-visual-placeholder" />
+              <div className="home-hero-visual-media">
+                <img
+                  src="/images/ctnglobal-hero.png"
+                  alt=""
+                  className="home-hero-visual-placeholder"
+                />
+                <span className="home-hero-visual-overlay" aria-hidden="true" />
+              </div>
             </div>
           </div>
         </div>
@@ -210,8 +221,12 @@ export default function AnaSayfa() {
                 </ul>
               </div>
 
-              <div className="home-about-content-visual" aria-hidden="true">
-                <div className="home-about-content-visual-placeholder" />
+              <div className="home-about-content-visual">
+                <img
+                  src={activeTab.imageSrc}
+                  alt=""
+                  className="home-about-content-visual-img"
+                />
               </div>
               </div>
             </div>
