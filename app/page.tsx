@@ -349,6 +349,75 @@ export default function AnaSayfa() {
         </div>
       </section>
 
+      <section className="home-brands" aria-labelledby="home-brands-title">
+        <div className="home-brands__inner">
+          <div className="home-brands__header">
+            <div className="home-brands__header-left">
+              <span className="home-brands__eyebrow">MARKALARIMIZ</span>
+              <h2 id="home-brands-title" className="home-brands__title">
+                Yetkili Bayisi Olduğumuz Markalar
+              </h2>
+            </div>
+            <p className="home-brands__header-description">
+              Kiwi ve Aprilla markalarında toptan satış, kurumsal tedarik ve bayi kanalı
+              yönetimini üstleniyoruz.
+            </p>
+          </div>
+
+          <div className="home-brands__divider" aria-hidden="true" />
+
+          <div className="home-brands__grid">
+            <article className="home-brands__column">
+              <img
+                src="/images/kiwi_logo.png"
+                alt="Kiwi"
+                className="home-brands__logo home-brands__logo--kiwi"
+              />
+              <h3 className="home-brands__column-title">Kiwi Elektronik – Küçük Ev Aletleri</h3>
+              <p className="home-brands__column-description">
+                İstanbul merkezli Türk markası Kiwi, 2016&apos;dan bu yana küçük ev aletleri üretiyor.
+                20&apos;den fazla ülkeye ihracat yapan markada yetkili toptan satış ortağıyız. Her ürün
+                için 2 yıl garanti ile kurumsal tedarik hizmetleri sunuyoruz.
+              </p>
+              <span className="home-brands__distributor">Yetkili Toptan Distribütör</span>
+              <h4 className="home-brands__list-title">TEMSİLİ ÜRÜN KATEGORİLERİ</h4>
+              <ul className="home-brands__list">
+                <li className="home-brands__list-item">Çay & Kahve Makineleri</li>
+                <li className="home-brands__list-item">Blender & Doğrayıcı</li>
+                <li className="home-brands__list-item">Tost & Sandviç Makinesi</li>
+                <li className="home-brands__list-item">Buharlı Ütü</li>
+                <li className="home-brands__list-item">Elektrikli Süpürge</li>
+                <li className="home-brands__list-item">Izgara & Buharlı Pişirici</li>
+              </ul>
+            </article>
+
+            <article className="home-brands__column">
+              <img
+                src="/images/aprilla_logo.png"
+                alt="Aprilla"
+                className="home-brands__logo home-brands__logo--aprilla"
+              />
+              <h3 className="home-brands__column-title">Aprilla Elektronik – Kişisel Bakım</h3>
+              <p className="home-brands__column-description">
+                2015 yılında kurulan yerli marka Aprilla, kişisel bakım elektroniğinde kaliteyi ve
+                yaratıcılığı bir arada sunuyor. Ergonomik tasarımları ve kullanıcı dostu ürünleriyle
+                sektörde saygın bir konuma ulaşmış markada yetkili toptan distribütörüyüz.
+              </p>
+              <span className="home-brands__distributor">Yetkili Toptan Distribütör</span>
+              <h4 className="home-brands__list-title">TEMSİLİ ÜRÜN KATEGORİLERİ</h4>
+              <ul className="home-brands__list">
+                <li className="home-brands__list-item">Tıraş & Sakal Makinesi</li>
+                <li className="home-brands__list-item">Epilasyon Aleti</li>
+                <li className="home-brands__list-item">Saç Kurutma Makinesi</li>
+                <li className="home-brands__list-item">Saç Kesim Makinesi</li>
+                <li className="home-brands__list-item">Masaj Aleti</li>
+                <li className="home-brands__list-item">Dijital Tartı & Sağlık</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="home-cta" aria-labelledby="home-cta-title">
         <div className="home-cta-inner">
           <h2 id="home-cta-title" className="home-cta-title">

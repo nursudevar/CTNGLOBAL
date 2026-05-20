@@ -678,9 +678,9 @@ $home-footer-border: #d4d0dc;
 // PETİVEDİ
 .home-petivedi {
   padding: 64px 0;
-  background-color: $home-white;
-  border-top: 1px solid $home-border-light;
-  border-bottom: 1px solid $home-border-light;
+  background-color: #0f1f35;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .home-petivedi__inner {
@@ -707,9 +707,9 @@ $home-footer-border: #d4d0dc;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: $home-navy;
-  background-color: #eef3f8;
-  border: 1px solid #d8e2ed;
+  color: $home-white;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
 }
 
@@ -720,7 +720,7 @@ $home-footer-border: #d4d0dc;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: $home-gray-label;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .home-petivedi__title {
@@ -729,7 +729,7 @@ $home-footer-border: #d4d0dc;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: -0.3px;
-  color: $home-navy;
+  color: $home-white;
 }
 
 .home-petivedi__description {
@@ -737,7 +737,7 @@ $home-footer-border: #d4d0dc;
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
-  color: $home-gray-text;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .home-petivedi__domain {
@@ -746,7 +746,7 @@ $home-footer-border: #d4d0dc;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0.2px;
-  color: $home-navy;
+  color: $home-white;
 }
 
 .home-petivedi__note {
@@ -754,7 +754,7 @@ $home-footer-border: #d4d0dc;
   font-size: 13px;
   font-weight: 500;
   line-height: 22px;
-  color: $home-gray-label;
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .home-petivedi__button {
@@ -766,8 +766,8 @@ $home-footer-border: #d4d0dc;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  color: $home-white;
-  background-color: $home-navy;
+  color: $home-navy;
+  background-color: $home-white;
   border-radius: 4px;
   cursor: default;
   user-select: none;
@@ -779,10 +779,10 @@ $home-footer-border: #d4d0dc;
   justify-content: center;
   min-height: 280px;
   padding: 40px 32px;
-  background-color: #f7f9fc;
-  border: 1px solid $home-border-light;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(15, 31, 53, 0.06);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.28);
 }
 
 .home-petivedi__logo {
@@ -791,6 +791,151 @@ $home-footer-border: #d4d0dc;
   max-width: 260px;
   height: auto;
   object-fit: contain;
+}
+
+// Markalarimiz
+.home-brands {
+  padding: 64px 0;
+  background-color: #fbfcfe;
+}
+
+.home-brands__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.home-brands__header {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 48px;
+  align-items: end;
+}
+
+.home-brands__eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $home-gray-label;
+}
+
+.home-brands__title {
+  margin: 0;
+  max-width: 620px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.4px;
+  color: $home-navy;
+}
+
+.home-brands__header-description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 26px;
+  color: $home-gray-text;
+}
+
+.home-brands__divider {
+  margin: 28px 0 0;
+  width: 100%;
+  height: 1px;
+  background-color: $home-border-light;
+}
+
+.home-brands__grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-brands__column {
+  padding: 16px 36px 0 0;
+}
+
+.home-brands__column + .home-brands__column {
+  padding: 16px 0 0 36px;
+  border-left: 1px solid $home-border-light;
+}
+
+.home-brands__logo {
+  display: block;
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+.home-brands__logo--kiwi {
+  height: 32px;
+}
+
+.home-brands__logo--aprilla {
+  height: 34px;
+}
+
+.home-brands__column-title {
+  margin: 20px 0 14px;
+  font-size: 27px;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+  color: $home-navy;
+}
+
+.home-brands__column-description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 27px;
+  color: $home-gray-text;
+}
+
+.home-brands__distributor {
+  display: inline-flex;
+  margin-top: 18px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $home-navy;
+  background-color: #edf2f8;
+  border: 1px solid #d9e2ec;
+  border-radius: 4px;
+}
+
+.home-brands__list-title {
+  margin: 24px 0 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: $home-gray-label;
+}
+
+.home-brands__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-brands__list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $home-navy;
+  border-bottom: 1px solid #e6edf4;
+}
+
+.home-brands__list-item::before {
+  content: "•";
+  font-size: 16px;
+  line-height: 1;
+  color: #355d92;
 }
 
 // CTA
@@ -1033,6 +1178,39 @@ $home-footer-border: #d4d0dc;
     padding: 32px 24px;
   }
 
+  .home-brands {
+    padding: 48px 0;
+  }
+
+  .home-brands__inner {
+    padding: 0 32px;
+  }
+
+  .home-brands__header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .home-brands__title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .home-brands__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-brands__column {
+    padding: 16px 0 0;
+  }
+
+  .home-brands__column + .home-brands__column {
+    margin-top: 28px;
+    padding: 28px 0 0;
+    border-left: none;
+    border-top: 1px solid $home-border-light;
+  }
+
   .home-about {
     padding: 30px 0;
   }
@@ -1218,6 +1396,25 @@ $home-footer-border: #d4d0dc;
 
   .home-petivedi__logo {
     max-width: 200px;
+  }
+
+  .home-brands__inner {
+    padding: 0 24px;
+  }
+
+  .home-brands__title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .home-brands__column-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .home-brands__list-item {
+    min-height: 40px;
+    font-size: 14px;
   }
 
   .home-about {
